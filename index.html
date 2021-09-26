@@ -84,14 +84,100 @@
           <h2>Tell us about yourself</h2>
         </div>
         <form>
-          <div class="indentity__input-text">
-              <label for="name">Your name</label>
-              <input type="text" id="name" />
-              <label for="gender">Your name</label>
-              <input type="text" id="gender" />
-            
+          <div class="indentity__form">
+            <div class="form__items">
+              <label class="form-label" for="name">Your name</label>
+              <input
+                class="form-input"
+                placeholder="Nikolay"
+                type="text"
+                id="name"
+              />
+            </div>
+            <div class="form__items">
+              <label class="form-label" for="gender">Your gender</label>
+              <select class="form-input" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <br />
+            <div class="form__items">
+              <label class="form-label" for="country">Your country</label>
+              <input
+                class="form-input"
+                placeholder="Russia"
+                type="text"
+                id="country"
+              />
+            </div>
+            <div class="form__items">
+              <label class="form-label" for="city">Your City</label>
+              <input
+                class="form-input"
+                placeholder="Moscow"
+                type="text"
+                id="city"
+              />
+            </div>
+            <div class="form__items">
+              <label class="form-label" for="dob">Your date of birth</label>
+              <input
+                class="form-input"
+                placeholder="MM/DD/YYYY"
+                type="date"
+                id="dob"
+              />
+            </div>
+          </div>
+          <div class="form__add-document">
+            <div class="form__items form__items-add-document">
+              <label class="form-label label-left" for="country"
+                >Proof your identity with some documents</label
+              >
+              <input
+                class="form-input"
+                placeholder="Add document"
+                type="file"
+                id="country"
+              />
+            </div>
+          </div>
+          <div class="form__items-submit">
+            <input
+              class="form__btn-submit"
+              type="submit"
+              style="margin-right: 24px"
+              value="Send info"
+            />
+            <input class="form__submit-checkbox" type="checkbox" />
+            <label class="form__checkbox-submit-label">Completed</label>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div class="slider" id="slider">
+      <div class="container">
+        <div class="slider__content">
+          <div class="slider__content-photo">
+            <div class="content item-one"></div>
+            <div class="content item-two"></div>
+            <div class="content item-three"></div>
+          </div>
+          <div>
+            <div class="slider__arrow slider__left-arrow"></div>
+            <div class="slider__arrow slider__right-arrow"> </div>
+          </div>
+        </div>
+        <div class="slider__content-nav">
+          <ul>
+            <li class="itemLinks" data-pos="0px"></li>
+            <li class="itemLinks" data-pos="-1312px"></li>
+            <li class="itemLinks" data-pos="-2624px"></li>
+          </ul>
+        </div>
+        
       </div>
     </div>
   </body>
