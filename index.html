@@ -1,174 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="assets/js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Test</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="header__img">
-          <img src="assets/img/header/pink_coma.png" alt="" />
-          <img src="assets/img/header/violet_coma.png" alt="" />
-        </div>
-        <div class="nav">
-          <ul>
-            <li><a href="#main"> Jane Doe </a></li>
-            <li><a href="#indentity">Tell us about yourself </a></li>
-            <li><a href="#slider">Slider </a></li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="assets/js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css">
+  <title>Test</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header__img">
+        <img src="assets/img/header/pink_coma.png" alt="" />
+        <img src="assets/img/header/violet_coma.png" alt="" />
       </div>
-    </header>
-
-    <div class="main" id="main">
-      <div class="container">
-        <div class="main__image-container">
-          <img
-            class="main__image"
-            src="assets/img/main/JanePhoto.png"
-            alt="JanePhoto"
-          />
-        </div>
-        <div class="main__text">
-          <div class="main__text-title main__title">Jane Doe</div>
-          <div class="main__text-fields">
-            <div class="main__text-field">
-              <div class="main__text-data-name">Date of birth</div>
-              <div class="main__text-data">21.02.2001</div>
-            </div>
-            <div class="main__text-field">
-              <div class="main__text-data-name">Gender</div>
-              <div class="main__text-data">Female</div>
-            </div>
-            <div class="main__text-field">
-              <div class="main__text-data-name">Country</div>
-              <div class="main__text-data">Corea</div>
-            </div>
-          </div>
-          <div class="main__about">
-            <div class="main__about-titile main__title">About me</div>
-            <div class="main__about-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. <br /><br />
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </div>
-          </div>
-        </div>
-        <div class="main__restangle">
-          <div class="main__rectangle-violet"></div>
-          <div class="main__rectangle-pink"></div>
-        </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#main"> Jane Doe </a></li>
+          <li><a href="#indentity">Tell us about yourself </a></li>
+          <li><a href="#slider">Slider </a></li>
+        </ul>
       </div>
     </div>
+  </header>
 
-    <div class="indentity" id="indentity">
-      <div class="container">
-        <div>
-          <h2>Tell us about yourself</h2>
+  <div class="main" id="main">
+    <div class="container">
+      <div class="main__image-container">
+        <img class="main__image" src="assets/img/main/JanePhoto.png" alt="JanePhoto" />
+      </div>
+      <div class="main__text">
+        <div class="main__text-title main__title">Jane Doe</div>
+        <div class="main__text-fields">
+          <div class="main__text-field">
+            <div class="main__text-data-name">Date of birth</div>
+            <div class="main__text-data">21.02.2001</div>
+          </div>
+          <div class="main__text-field">
+            <div class="main__text-data-name">Gender</div>
+            <div class="main__text-data">Female</div>
+          </div>
+          <div class="main__text-field">
+            <div class="main__text-data-name">Country</div>
+            <div class="main__text-data">Corea</div>
+          </div>
         </div>
-        <form>
-          <div class="indentity__form">
-            <div class="form__items">
-              <label class="form-label" for="name">Your name</label>
-              <input
-                class="form-input"
-                placeholder="Nikolay"
-                type="text"
-                id="name"
-              />
-            </div>
-            <div class="form__items">
-              <label class="form-label" for="gender">Your gender</label>
-              <select class="form-input" id="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-            </div>
-            <br />
-            <div class="form__items">
-              <label class="form-label" for="country">Your country</label>
-              <input
-                class="form-input"
-                placeholder="Russia"
-                type="text"
-                id="country"
-              />
-            </div>
-            <div class="form__items">
-              <label class="form-label" for="city">Your City</label>
-              <input
-                class="form-input"
-                placeholder="Moscow"
-                type="text"
-                id="city"
-              />
-            </div>
-            <div class="form__items">
-              <label class="form-label" for="dob">Your date of birth</label>
-              <input
-                class="form-input"
-                placeholder="MM/DD/YYYY"
-                type="date"
-                id="dob"
-              />
-            </div>
+        <div class="main__about">
+          <div class="main__about-titile main__title">About me</div>
+          <div class="main__about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. <br /><br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
           </div>
-          <div class="form__add-document">
-            <div class="form__items form__items-add-document">
-              <label class="form-label label-left" for="country"
-                >Proof your identity with some documents</label
-              >
-              <input
-                class="form-input"
-                placeholder="Add document"
-                type="file"
-                id="country"
-              />
-            </div>
-          </div>
-          <div class="form__items-submit">
-            <input
-              class="form__btn-submit"
-              type="submit"
-              style="margin-right: 24px"
-              value="Send info"
-            />
-            <input class="form__submit-checkbox" type="checkbox" />
-            <label class="form__checkbox-submit-label">Completed</label>
-          </div>
-        </form>
+        </div>
+      </div>
+      <div class="main__restangle">
+        <div class="main__rectangle-violet"></div>
+        <div class="main__rectangle-pink"></div>
       </div>
     </div>
+  </div>
 
-    <div class="slider" id="slider">
-      <div class="container">
-        <div class="slider__content">
-          <div class="slider__content-photo">
-            <div class="content item-one"></div>
-            <div class="content item-two"></div>
-            <div class="content item-three"></div>
+  <div class="indentity" id="indentity">
+    <div class="container">
+      <div>
+        <h2>Tell us about yourself</h2>
+      </div>
+      <form onsubmit="sendFormData()">
+        <div class="indentity__form">
+          <div class="form__items">
+            <label class="form-label" for="name">Your name</label>
+            <input required class="form-input" placeholder="Nikolay" type="text" id="name" />
           </div>
-          <div>
-            <div class="slider__arrow slider__left-arrow"></div>
-            <div class="slider__arrow slider__right-arrow"> </div>
+          <div class="form__items">
+            <label class="form-label" for="gender">Your gender</label>
+            <select required class="form-input" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
           </div>
+          <br />
+          <div class="form__items">
+            <label class="form-label" for="country">Your country</label>
+            <input required class="form-input" placeholder="Russia" type="text" id="country" />
+          </div>
+          <div class="form__items">
+            <label class="form-label" for="city">Your City</label>
+            <input required class="form-input" placeholder="Moscow" type="text" id="city" />
+          </div>
+          <div class="form__items">
+            <label class="form-label" for="dob">Your date of birth</label>
+            <input required class="form-input" placeholder="MM/DD/YYYY" type="date" id="dob" />
+          </div>
+        </div>
+        <div class="form__add-document">
+          <div class="form__items form__items-add-document">
+            <label class="form-label label-left" for="document">Proof your identity with some documents</label>
+            <input class="form-input" accept=".png, .jpg, .jpeg" onChange="addFiles()" multiple
+              placeholder="Add document" type="file" id="document" />
+          </div>
+        </div>
+        <div class="form__document-display">
+        </div>
+        <div class="form__items-submit">
+          <input class="form__btn-submit" type="submit" style="margin-right: 24px" value="Send info" />
+          <input class="form__submit-checkbox" type="checkbox" />
+          <label class="form__checkbox-submit-label">Completed</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="slider" id="slider">
+    <div class="container">
+      <div class="slider__content">
+        <div class="slider__content-photo">
+          <div class="content item-one">
+            <div class="slider__content-t">
+              <h2 class="slider__item-title">Some text</h2>
+              <p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam
+                molestias, iure nulla itaque
+                nostrum perspiciatis iusto at saepe doloremque quis impedit. Quisquam neque harum voluptate ad saepe a
+                ipsam.</p>
+            </div>
+          </div>
+          <div class="content item-two">
+            <div class="slider__content-t">
+              <h2 class="slider__item-title">Some text</h2>
+              <p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam
+                molestias, iure nulla itaque
+                nostrum perspiciatis iusto at saepe doloremque quis impedit. Quisquam neque harum voluptate ad saepe a
+                ipsam.</p>
+            </div>
+          </div>
+          <div class="content item-three">
+            <div class="slider__content-t">
+              <h2 class="slider__item-title">Some text</h2>
+              <p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam
+                molestias, iure nulla itaque
+                nostrum perspiciatis iusto at saepe doloremque quis impedit. Quisquam neque harum voluptate ad saepe a
+                ipsam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__arrows">
+          <div class="slider__arrow slider__left-arrow"></div>
+          <div class="slider__arrow slider__right-arrow"> </div>
         </div>
         <div class="slider__content-nav">
           <ul>
@@ -177,8 +166,11 @@
             <li class="itemLinks" data-pos="-170vw"></li>
           </ul>
         </div>
-        
       </div>
+
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
