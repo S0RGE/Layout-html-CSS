@@ -247,7 +247,7 @@ header > .container {
 }
 
 .slider__content-photo {
-  width: 3936px;
+  width: 255vw;
   position: relative;
   left: 0;
   transition: left 0.3s ease-in-out;
@@ -255,7 +255,7 @@ header > .container {
 
 .content {
   float: left;
-  width: 1312px;
+  width: 85vw;
   height: 535px;  
   word-spacing: normal;
   background-repeat: no-repeat;
@@ -276,15 +276,15 @@ header > .container {
 
 .slider__content {
   position: relative;
-  width: 1312px;
-  height: 535px;
+  width: 85vw;
+  height: 70vh;
   overflow: hidden;
   margin: 0 auto;
 }
 
 .slider__content-nav{
   text-align: center;
-  width: 1312px;
+  width: 85vw;
 }
 
 .slider__content-nav ul{
@@ -296,7 +296,7 @@ header > .container {
 
 .slider__content-nav ul li{
   position: relative;
-  top: -50px;
+  top: -10vh;
   float: left;
   text-align: center;
   margin: 10px;
