@@ -203,12 +203,16 @@ header > .container {
 }
 
 .form__file-input-text {
+  display: flex;
+
+  flex-direction: column;
 }
 
 .form__file-input-basket {
   background: url("../img/crt/cart.png") center/100% no-repeat;
   width: 10px;
   height: 20px;
+  cursor: pointer;
 }
 
 .form-input::placeholder {
@@ -251,6 +255,10 @@ header > .container {
   min-height: 100px;
 }
 
+.form__items-submit {
+  display: flex;
+}
+
 .form__btn-submit {
   background: #ded9e4;
   border-radius: 12px;
@@ -259,18 +267,70 @@ header > .container {
   color: #fff;
   border: #ded9e4;
   margin-top: 12px;
-}
-
-.form__btn-submit:hover {
   cursor: pointer;
 }
 
-.form__checkbox-submit-label {
+.chckbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox-submit-label {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #303030;
+  padding-left: 38px;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
 }
+
+.submit__checkbox {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.chkbox input:checked ~ .fake__checkbox {
+  border-color: #e1fee8;
+  box-shadow: 0px 0px 0px 15px #E1FEE8 inset;
+}
+
+.chckbox input:checked ~ .fake__checkbox::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.chckbox .fake__checkbox {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 100px;
+  background: #E1FEE8;
+  box-shadow: 0px 0px 0px 15px #E1FEE8 inset;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+
+.chckbox .fake__checkbox::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 4;
+  position: absolute;
+  transform: scale(0);
+  background: url("../img/crt/checkbox.png") center/50% no-repeat;
+  transition-delay: .2s !important;
+  transition: all .25s cubic-bezier(0, 1.05, .72, 1.07);
+
+}
+
+
 
 /* Slider */
 
@@ -315,7 +375,6 @@ header > .container {
   justify-content: center;
   height: 100%;
 }
-
 
 .slider__item-title {
   font-weight: 800;

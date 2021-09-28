@@ -4,6 +4,9 @@ const slider = document.querySelector(".slider__content-photo")
 const leftArrow = document.querySelector(".slider__left-arrow")
 const rightArrow = document.querySelector(".slider__right-arrow")
 
+const inputFiles = document.getElementById("document");
+const divToEnter = document.querySelector(".form__document-display");
+
 let activeLink = 0;
 
 
@@ -54,3 +57,44 @@ function func(target) {
         }
     }
 }
+
+function sendFormData() {
+    const name = document.getElementById("name");
+    const gender = document.getElementById("gender");
+    const country = document.getElementById("country");
+    const city = document.getElementById("city");
+    const date = document.getElementById("dob");
+
+
+    console.log("Sending data ...");
+    console.log("name =", name.value);
+    console.log("gender =", gender.value);
+    console.log("country =", country.value);
+    console.log("city =", city.value);
+    console.log("date =", date.value);
+}
+
+function deleteFile(file){ // TODO: delete only from DOM
+
+    divToEnter.removeChild(file.target.parentNode);
+}
+
+function addFiles(){   
+    for( let i = 0 ; i < inputFiles.files.length; i++){
+        const file = document.createElement("div");
+        const fileName = document.createElement("div");
+        const basket = document.createElement("div");
+        basket.addEventListener("click", deleteFile)
+        file.className = "form__file-input";
+        fileName.innerHTML = inputFiles.files[i].name;
+        // fileName.innerHTML += " " + inputFiles.files[i].size/1024000 + "mb";
+
+        fileName.className ="form__file-input-text";        
+        basket.className ="form__file-input-basket";        
+        file.append(fileName);
+        file.append(basket);
+
+        divToEnter.append(file);
+    }    
+}
+

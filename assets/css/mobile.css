@@ -1,0 +1,9 @@
+@media (max-width:800px){    
+    .nav{
+        display: none;
+    }
+    .header__img{
+       margin: 0 auto;
+    }
+    
+}
