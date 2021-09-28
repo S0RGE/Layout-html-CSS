@@ -82,23 +82,23 @@
         <div class="indentity__form">
           <div class="form__items">
             <label class="form-label" for="name">Your name</label>
-            <input required class="form-input" placeholder="Nikolay" type="text" id="name" />
+            <input required class="form-input" placeholder="name" type="text" id="name" />
           </div>
           <div class="form__items">
             <label class="form-label" for="gender">Your gender</label>
             <select required class="form-input" id="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
             </select>
           </div>
           <br />
           <div class="form__items">
             <label class="form-label" for="country">Your country</label>
-            <input required class="form-input" placeholder="Russia" type="text" id="country" />
+            <input required class="form-input" placeholder="country" type="text" id="country" />
           </div>
           <div class="form__items">
             <label class="form-label" for="city">Your City</label>
-            <input required class="form-input" placeholder="Moscow" type="text" id="city" />
+            <input required class="form-input" placeholder="city" type="text" id="city" />
           </div>
           <div class="form__items">
             <label class="form-label" for="dob">Your date of birth</label>
@@ -107,9 +107,12 @@
         </div>
         <div class="form__add-document">
           <div class="form__items form__items-add-document">
-            <label class="form-label label-left" for="document">Proof your identity with some documents</label>
-            <input class="form-input" accept=".png, .jpg, .jpeg" onChange="addFiles()" multiple
+            <label class="form-label label-left">Proof your identity with some documents</label>
+            <label for="document" class="form-input input__label">
+              <input class="input__file__button" accept=".png, .jpg, .jpeg" onChange="addFiles()" multiple
               placeholder="Add document" type="file" id="document" />
+              Add document
+            </label>
           </div>
         </div>
         <div class="form__document-display">
@@ -124,6 +127,18 @@
         </div>
       </form>
     </div>
+    <div class="indentity__cube">
+      <div class="cube top__cube"></div>
+      <div class="cube middle__cube"></div>
+      <div class="cube bottom__cube"></div>
+    </div>
+
+    <div class="indentity__cube indentity__cube-right">
+      <div class="cube top__cube" style="background: #8E43ED"></div>
+      <div class="cube middle__cube" style="background: #E0CFF8;"></div>
+      <div class="cube bottom__cube" style="background: #F18BC3;"></div>
+    </div>
+
   </div>
 
   <div class="slider" id="slider">
@@ -132,29 +147,20 @@
         <div class="slider__content-photo">
           <div class="content item-one">
             <div class="slider__content-t">
-              <h2 class="slider__item-title">Some text</h2>
-              <p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam
-                molestias, iure nulla itaque
-                nostrum perspiciatis iusto at saepe doloremque quis impedit. Quisquam neque harum voluptate ad saepe a
-                ipsam.</p>
+              <h2 class="slider__item-title">Slide this photo</h2>
+              <p class="slider__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
           <div class="content item-two">
             <div class="slider__content-t">
-              <h2 class="slider__item-title">Some text</h2>
-              <p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam
-                molestias, iure nulla itaque
-                nostrum perspiciatis iusto at saepe doloremque quis impedit. Quisquam neque harum voluptate ad saepe a
-                ipsam.</p>
+              <h2 class="slider__item-title">Slide this photo</h2>
+              <p class="slider__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
           <div class="content item-three">
             <div class="slider__content-t">
-              <h2 class="slider__item-title">Some text</h2>
-              <p class="slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus veniam
-                molestias, iure nulla itaque
-                nostrum perspiciatis iusto at saepe doloremque quis impedit. Quisquam neque harum voluptate ad saepe a
-                ipsam.</p>
+              <h2 class="slider__item-title">Slide this photo</h2>
+              <p class="slider__item-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
         </div>
