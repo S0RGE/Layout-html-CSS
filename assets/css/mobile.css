@@ -19,14 +19,14 @@ header > .container{
     display: flex;
     flex-direction: column;
     max-width: 90%;
-    margin-left: 13px;
-    margin-right: 13px;
+    margin-left: 48px;
+    margin-right: 14px;
 }
 
   .main {
     border-radius: 0;
-    height: 200vh;
-  }
+    height: 150vh;
+  } 
 
   .main__image-container {
     width: 100%;
@@ -37,6 +37,11 @@ header > .container{
       width: 100%;
   }
 
+  .main__text-field{
+      display: flex;
+      flex-direction: column;
+  }
+
   .main__restangle{
     transform: scale(-1, 1);
     right: 16px;
@@ -44,7 +49,12 @@ header > .container{
   }
 
   .indentity{
-      height: 140vh;
+      height: 100vh;
+  }
+
+  .indentity h2 {
+      font-size: 32px;
+      line-height: 41px;
   }
 
   .indentity__cube{
@@ -52,6 +62,7 @@ header > .container{
   }
 
   .indentity__form{
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -61,8 +72,16 @@ header > .container{
       display: none;
   }
 
+  .chckbox{
+      display: none;
+  }
+  .form__btn-submit{
+      width: 100%;
+      margin: 0 !important;
+  }
+
   .form__items{
-      width: 75%;
+      width: 100%;
       margin-top: 40px;
       margin-bottom: 0;
   }
@@ -85,5 +104,9 @@ header > .container{
       margin: 27px auto;
       width: 212px;
       text-align: center;
+  }
+
+  .indentity__form :nth-child(5){
+      display: none;
   }
 }

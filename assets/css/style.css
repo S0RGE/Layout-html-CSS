@@ -160,7 +160,7 @@ header > .container {
 }
 
 .indentity__form {
-  width: 976px;
+  width: 80vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
