@@ -1,9 +1,89 @@
-@media (max-width:800px){    
-    .nav{
-        display: none;
-    }
-    .header__img{
-       margin: 0 auto;
-    }
-    
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+
+header > .container{
+    height: 64px;
+}
+
+ .header__img {   
+    margin: 17px auto;
+  }
+
+  .header__img > img{
+      height: 38px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+  .main {
+    border-radius: 0;
+    height: 200vh;
+  }
+
+  .main__image-container {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .main__image{
+      width: 100%;
+  }
+
+  .main__restangle{
+    transform: scale(-1, 1);
+    right: 16px;
+    bottom: 100vh;
+  }
+
+  .indentity{
+      height: 140vh;
+  }
+
+  .indentity__cube{
+      display: none;
+  }
+
+  .indentity__form{
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+  }
+
+  .indentity__form > br{
+      display: none;
+  }
+
+  .form__items{
+      width: 75%;
+      margin-top: 40px;
+      margin-bottom: 0;
+  }
+
+  .form-input{
+      width: 100%;
+  }
+
+  .form-label{
+    margin: 0 auto;
+  }
+
+  .form__add-document{
+      height: 100%;
+  }
+
+  .form__items-add-document{
+      display: flex;
+      flex-direction: column;
+      margin: 27px auto;
+      width: 212px;
+      text-align: center;
+  }
 }

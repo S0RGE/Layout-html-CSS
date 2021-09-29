@@ -9,7 +9,6 @@ const divToEnter = document.querySelector(".form__document-display");
 
 let activeLink = 0;
 
-
 for (let i = 0; i < links.length; i++) {
     const link = links[i];
     link.addEventListener('click', setClickedItem, false)
@@ -75,6 +74,20 @@ function sendFormData() {
 }
 
 function deleteFile(file){ // TODO: delete only from DOM
+    console.log("file to del ",  file);
+    console.log("Input files ", inputFiles.files);
+    const name = file.target.parentNode.childNodes[0].innerHTML;
+
+    for (let prop in inputFiles.files){
+        if(inputFiles.files[prop].name === name){
+            console.log("Finded item", inputFiles.files[prop]);
+            inputFiles.files[prop] = undefined;
+        }
+    }
+
+    console.log("name ", name);
+
+    console.log("Input files ", inputFiles.files);
 
     divToEnter.removeChild(file.target.parentNode);
 }
@@ -87,7 +100,6 @@ function addFiles(){
         basket.addEventListener("click", deleteFile)
         file.className = "form__file-input";
         fileName.innerHTML = inputFiles.files[i].name;
-        // fileName.innerHTML += " " + inputFiles.files[i].size/1024000 + "mb";
 
         fileName.className ="form__file-input-text";        
         basket.className ="form__file-input-basket";        
